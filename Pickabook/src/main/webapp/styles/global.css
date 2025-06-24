@@ -1,0 +1,158 @@
+/*Global styling*/
+:root {
+    --background-purple: #6A4BAF;
+    --background-black:  #2c2c2c;
+    --div-black: #313131;
+    --cap-red: #E52521;
+    --cap-dark-red: #b11e1b;
+    --book-green: #4CAF50;
+    --icon-yellow: #F7D51D;
+    --icon-orange: #F39C12;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    --header1: calc(2rem + 1vw);
+    --header2: calc(3.5rem + 1vw);
+    --header3: calc(3rem + 1vw);
+    --header4: calc(1.5rem + 1vw);
+    --text: calc(1rem + 0.7vw);
+    --link: calc(1rem + 0.7vw);
+    --icon: calc(2rem + 1vw);
+    --big: calc(6rem + 1vw);
+    --image: calc(30rem + 1vw);
+    --special-color: #E52521;
+    --hover-color: #c83c54;
+    --footer-color : #414141;
+}
+
+body{
+    background: var(--background-black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: "Inter" , sans-serif;
+}
+
+h1 {
+    font-size: var(--header1);
+}
+
+h2 {
+    font-size: var(--header2);
+}
+
+h3 {
+    font-size: var(--header3);
+}
+
+h4,
+h5 {
+	margin-top: 10px;
+    font-size: var(--header4);
+}
+
+li,
+button,
+label,
+input,
+p {
+    font-size: var(--text);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    font-size: var(--link);
+    text-decoration: none;
+    color: var(--div-black);
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 0.2rem;
+}
+
+
+/*** NAV SECTION ***/
+
+.main-head{
+    background: var(--background-purple);
+    color: var(--div-black);
+	width: 100%
+}
+
+nav{
+    min-height: 5vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+#logo{
+    flex: 1 1 40rem;
+    font-family: "Pattaya", sans-serif;
+    font-weight: 400;
+    padding: 2rem;
+    background: url("../icons/logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10rem;
+    text-align: center;
+}
+
+nav ul{
+    flex: 2 1 40rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li{
+    padding: 1rem;
+    position: relative;
+}
+
+nav li a{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav img{
+    height: var(--icon);
+    width: var(--icon);
+    margin-right: 1rem;
+}
+
+#counter{
+    position: absolute;
+    background: white;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    top: 0;
+    left: 45px;
+    transform: translate(-45%, 0);
+    padding: 1rem;
+}
+
+#counter  p{
+    position: absolute;
+    top: -6px;
+    right: 50%;
+    transform: translateX(50%);
+}
+

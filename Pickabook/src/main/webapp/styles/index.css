@@ -1,0 +1,126 @@
+main {
+	min-height: 90vh;
+}
+
+.banner {
+	box-shadow: 0 1rem 1rem rgba(1, 2, 68, 0.1);
+	background-size: cover;
+	background-position: center;
+	min-height: 50vh;
+	margin-top: 5rem;
+	position: relative;
+	min-width: 100vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-image: url('../icons/slider.png');
+	background-size: cover;
+}
+
+.slider {
+	display: flex;
+	width: 100%;
+	overflow-x: auto;
+	overflow: hidden;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	scroll-snap-align: start;
+}
+
+.content {
+	min-width: 90%;
+	display: flex;
+	padding: 3rem;
+	justify-content: space-around;
+	align-items: center;
+	margin: auto;
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+}
+
+.textbox {
+	padding: 2rem;
+	max-width: 600px;
+}
+
+.textbox h2 {
+	color: #fff;
+	font-size: 8rem;
+	line-height: 11.2rem;
+	font-weight: 900;
+}
+
+.textbox p {
+	color: #e6e6e6;
+}
+
+.textbox a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #E52521;
+	color: #fff;
+	border-radius: 40px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+
+.imgbox {
+	margin-top: 5rem;
+	justify-content: end;
+}
+
+.imgbox img {
+	max-width: 34rem;
+	padding-right: 2rem;
+}
+
+.no-scroll {
+	overflow-y: hidden;
+}
+
+.sliderNav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.sliderNav a {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: grey;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.sliderNav a:hover {
+	opacity: 0.5;
+}
+
+/* SCHEDE PRODOTTO */
+
+#prodotti h2{
+	color: #fff;
+	font-size: 5rem;
+	font-weight: bold;
+	line-height: 1.4em;
+	text-align: center;
+	margin-top: 5rem;
+}
+
+.schedeProdotto {
+	height: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-bottom: 10rem;
+	justify-content: center;
+	background-color: #6A4BAF;
+}
+

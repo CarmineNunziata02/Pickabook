@@ -1,0 +1,59 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8"%>
+<html lang="it">
+    <jsp:include page="./header.jsp" flush="true"></jsp:include>
+    <body>
+        <jsp:include page="./nav.jsp" flush="true"></jsp:include>
+        <main>
+            <section class="banner">
+                <div class="slider">
+                    <div class="content" id="slide1">
+                        <div class="textbox">
+                            <h2>L'isola del tesoro</h2>
+                            <p>Una mappa misteriosa, pirati e avventure in mare alla ricerca di un tesoro nascosto.<p>
+                            <a>Acquista ora</a>
+                        </div>
+                        <div class="imgbox">
+                            <img src="./images/isola_del_tesoro.jpg" alt="" class="db">
+                        </div>
+                    </div>
+                    <div class="content" id="slide2">
+                        <div class="textbox">
+                            <h2>Il diario di Anna Frank</h2>
+                            <p>La testimonianza toccante di una ragazza ebrea nascosta.<p>
+                            <a> Acquista ora</a>
+                        </div>
+                        <div class="imgbox">
+                            <img src="./images/anna_frank.jpg" alt="" class="db">
+                        </div>
+                    </div>
+                    <div class="content" id="slide3">
+                        <div class="textbox">
+                            <h2>La fabbrica di cioccolato</h2>
+                            <p>Charlie visita la magica fabbrica del signor Wonka.<p>
+                            <a> Acquista ora</a>
+                        </div>
+                        <div class="imgbox">
+                            <img src="./images/fabbrica_ciocc.jpg" alt="" class="db">
+                        </div>
+                    </div>
+                    <div class="sliderNav">
+                        <a href="#slide1" onclick="scrollSenzaOffset(event)"></a>
+                        <a href="#slide2" onclick="scrollSenzaOffset(event)"></a>
+                        <a href="#slide3" onclick="scrollSenzaOffset(event)"></a>
+                    </div>
+                </div>
+            </section>
+            <section id="prodotti">
+                <h2> Ultime Uscite </h2>
+                <div id="schedeUltimeAggiunte" class="schedeProdotto">
+
+                </div>
+                <h2> Best Sellers </h2>
+                <div id="schedeBestSeller" class="schedeProdotto">
+
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
