@@ -193,3 +193,8 @@ INSERT INTO prodotti (isbn, nome, autore, descrizione, immagine_prod, prezzo, qu
 ('10000000000000143','Il collezionista di ossa','Jeffery Deaver','Profili criminali e infallibilità','./images/ossa.jpg',12.50,15,'Thriller','Giallo',0),
 -- Romanzi Sentimentali e Modern Romance
 ('10000000000000149','La cena','Hermann Koch','Amicizia, tensioni, silenzi inquietanti','./images/cena.jpg',12.00,18,'Drammatico','Romanzo Sentimentale',0),
+
+
+--popolamento delle tabelle metodo_spedizione e stato_ordine
+INSERT INTO `metodo_spedizione` VALUES (1,'PosteItaliane',10);
+INSERT INTO `stato_ordine` VALUES (1,'Confermato'),(2,'Spedito'),(3,'Annullato'),(4,'In lavorazione');
