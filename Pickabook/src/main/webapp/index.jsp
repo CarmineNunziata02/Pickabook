@@ -2,8 +2,8 @@
          pageEncoding="UTF-8"%>
 <html lang="it">
     <jsp:include page="./header.jsp" flush="true"></jsp:include>
-    <script src="./script/index.js"></script>
-    <script src="./script/dynamicCode.js"></script>
+    <script src="./Script/index.js"></script>
+    <script src="./Script/dynamicCode.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", dynamicIndex("<%=request.getContextPath()%>/IndexServlet?tipo=lastSaved"));
         document.addEventListener("DOMContentLoaded", dynamicIndex2("<%=request.getContextPath()%>/IndexServlet?tipo=bestSellers"));
