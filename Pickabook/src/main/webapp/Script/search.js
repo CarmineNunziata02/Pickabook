@@ -19,12 +19,7 @@ function searchAndFilter() {
     return categoryMatches && genreMatches;
   });
 
-  // Calcola il numero totale di pagine basato sui prodotti filtrati
   totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
-
-  // Crea le schede dei prodotti per la prima pagina dei prodotti filtrati utilizzando la funzione createProductCards2
   createProductCards2(1, filteredProducts);
-
-  // Crea i link per la navigazione tra le pagine basati sul numero totale di pagine dei prodotti filtrati
   createPaginationLinks2(totalPages);
 }
