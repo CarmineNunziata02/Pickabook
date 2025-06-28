@@ -14,7 +14,6 @@
 	"></script>
 
     <script src="./Script/dynamicCode.js"></script>
-    <script src="./Script/carrello.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var filtroBottone = document.getElementById('filtroBottone');
