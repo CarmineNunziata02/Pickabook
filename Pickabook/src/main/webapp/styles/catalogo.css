@@ -1,0 +1,279 @@
+
+:root {
+	--first-color: #6A4BAF;
+    --dark-color: #313131;
+    --title-color: hsl(222, 8%, 8%);
+    --text-color-light: hsl(222, 8%, 65%);
+    --white-color: #fff;
+    --body-color: hsl(222, 100%, 99%);
+    --body-font: "Inter", sans-serif;
+    --small-font-size: .813rem;
+    --mid-font-size: 2rem;
+}
+
+main {
+    display: flex;
+    min-height: 90vh;
+}
+
+#catalogo{
+    width: 100%;
+    display: flex;
+    overflow-x: hidden ;
+}
+
+#catalogo td{
+    padding: 0.5rem;
+}
+
+label{
+    margin: 1rem;
+}
+
+/* FILTRI */
+#filtri {
+    display: block;
+    margin: 2rem;
+    border-radius: 1.2rem;
+    flex: 1 1 40rem;
+    max-width: 25rem;
+    padding: 1rem;
+    background-color: #6A4BAF;
+}
+
+#filtri h4 {
+	color: #2c2c2c;
+	text-align: center;
+	font-weight: bold;
+}
+
+#filtri label {
+	color: white;
+}
+
+/* SCHEDE PRODOTTO */
+#prodotti {
+    flex: 1 1 40rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+
+.pagination-container{
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    background: var(--first-color);
+    min-height: 5vh;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 3rem;
+    bottom: 0;
+}
+
+.pagination-container a{
+    background: var(--dark-color);
+    text-align: center;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.pagination-container a:hover{
+    background: var(--hover-color);
+}
+
+#search-input{
+    flex: 1 1 40rem;
+    text-align: end;
+}
+
+#schedeProdotto {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    grid-gap: 4rem;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.scheda {
+    border-radius: 1.2rem;
+    background-color: #424242;
+    text-align: center;
+    max-width: 24rem;
+    max-height: 40rem;
+    margin: 2rem 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0.8em 0.8em 1em rgba(0, 0, 0, 0.5);
+    color: #e6e6e6;
+}
+
+.scheda h4{
+    font-size: 2rem;
+  	color: #fff;
+}
+.scheda img {
+    max-height: 19rem;
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.info a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: var(--special-color);
+    color: white;
+    border-radius: 40px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: background 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.info a:hover {
+    background: var(--hover-color);
+}
+
+/*** SEARCH E MOSTRA FILTRI ***/
+
+.features{
+    min-height: 5vh;
+    padding: 2rem;
+    display: flex;
+    position: relative;    
+}
+
+
+#filtroBottone{
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 1 40rem;
+    font-size: var(--mid-font-size);
+    text-align: center;
+    background: var(--special-color);
+    color: white;
+    border-radius: 2rem;
+    transition: background 0.5s ease-in-out;
+}
+
+#filtroBottone:hover {
+    background: var(--hover-color);
+}
+
+#no-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+#no-item img {
+	max-height: 128px;
+	max-width: 128px;
+}
+
+#no-item p {
+	color: #E52521;
+	font-size: var(--header4);
+}
+
+.search {
+    position: relative;
+    width: 76px;
+    height: 76px;
+    background-color: #313131;
+    box-shadow: 0 4px 24px hsla(222, 68%, 12%, 0.1);
+    border-radius: 4rem;
+    padding: 10px;
+    overflow: hidden;
+    transition: width 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
+}
+.search__input {
+    border: none;
+    outline: none;
+    width: calc(100% - 64px);
+    height: 100%;
+    border-radius: 4rem;
+    padding-left: 14px;
+    font-family: var(--body-font);
+    font-size: var(--mid-font-size);
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1.5s;
+    background-color: #313131;
+    color: #fff;
+}
+
+.search__input:-webkit-autofill {
+    box-shadow: 0 0 0 100px var(--white-color) inset;
+}
+.search__button {
+    width: 56px;
+    height: 56px;
+    background-color: var(--dark-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: transform 0.6s cubic-bezier(0.9, 0, 0.3, 0.9);
+}
+.search__icon, .search__close {
+    color: var(--white-color);
+    font-size: 1.5rem;
+    position: absolute;
+    transition: opacity 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
+}
+.search__close {
+    opacity: 0;
+}
+
+/* Search animated */
+.show-search {
+    width: 100%;
+}
+.show-search .search__input {
+    opacity: 1;
+    pointer-events: initial;
+}
+.show-search .search__button {
+    transform: rotate(90deg);
+}
+.show-search .search__icon {
+    opacity: 0;
+}
+.show-search .search__close {
+    opacity: 1;
+}
+
+@media ( max-width : 768px) {
+    #catalogo{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #prodotti {
+        padding-top: 1rem;
+    }
+    #schedeProdotto {
+        justify-items: center;
+    }
+}
