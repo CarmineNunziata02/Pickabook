@@ -23,6 +23,15 @@
     } else if(currentPage.equals("/catalogo.jsp")){
     	cssFile = "catalogo.css";
     	AdditionalCss = true;
+    } else if (currentPage.equals("/login.jsp")){
+      cssFile = "login.css";
+      AdditionalCss = true;
+    } else if (currentPage.equals(("/loginAdmin.jsp"))) {
+      cssFile = "loginAdmin.css";
+      AdditionalCss = true;
+    } else if (currentPage.equals(("/signup.jsp"))) {
+      cssFile = "signup.css";
+      AdditionalCss = true;
     }
    
   %>
