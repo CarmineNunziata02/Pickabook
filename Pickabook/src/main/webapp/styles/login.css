@@ -1,0 +1,107 @@
+
+main{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login{
+    margin-top: 2rem;
+   	display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    min-width: 20vw;
+    padding: 2rem;
+    background: var(--background-purple);
+    box-shadow: 0.5rem 0.3rem 1rem rgba(1 ,2 ,68 , 0.1) , 0.8rem 0.6rem 1rem rgba(1 ,2 ,68 , 0.1);
+    border-radius: 5px;
+}
+
+.login-img{
+    margin: 2rem;
+}
+
+.login-img img{
+    margin-top: 3rem;
+    border-radius: 1.2rem;
+    max-height: 256px;
+    max-width: 256px;
+}
+
+
+.form-wrapper form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-wrapper h3{
+    text-align: center;
+}
+.form-wrapper input{
+    padding: 1.5rem 4rem;
+    margin: 1rem;
+    width: calc(60% - 35px);
+    background-color: var(--div-black);
+    color: white;
+    border: none;
+}
+
+.password-row {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.password-row input{
+    padding: 1.5rem 4rem;
+    margin: 1rem;
+    width: calc(60% - 35px);
+    border: none;
+}
+
+.password-row img {
+    position: absolute;
+    width: 25px;
+    cursor: pointer;
+    right: 135px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.form-wrapper button{
+    width: 60%;
+    background: var(--cap-red);
+    color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    margin: 1rem;
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+    border: none;
+}
+
+.form-wrapper button:hover{
+    background: #b11e1b;
+}
+
+.links{
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    color: var(--background-black);
+}
+
+.links a{
+    flex: 1 1 20rem;
+    color: var(--cap-red);
+}
+
+.links p{
+    flex:  1 1 20rem;
+}
