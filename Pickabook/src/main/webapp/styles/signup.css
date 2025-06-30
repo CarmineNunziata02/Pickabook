@@ -1,0 +1,114 @@
+
+main{
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    justify-content: center;
+}
+
+#signup {
+    margin-top:2rem;
+    min-height: 90vh;
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-purple);
+    border-radius: 12px;
+    padding: 3rem;
+}
+
+#signup-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+
+#signup-img img {
+    margin: 0 3rem;
+    margin-top: 5rem;
+    border-radius: 12px;
+    max-height: 256px;
+    max-width: 256px;
+}
+
+.signup-form {
+    text-align: center;
+    width: 70%;
+    margin-bottom: 5rem;
+}
+
+.signup-form button {
+    border: none;
+    font-size: var(--text);
+    width: 50%;
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    background-color: var(--special-color);
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+}
+
+.signup-form button:hover {
+    background: #b11e1b;
+}
+
+.form-row {
+    display: flex;
+    padding: 3rem;
+    text-align: start;
+    flex-wrap: wrap;
+}
+
+.form-row label {
+    margin: 0rem 3rem;
+    flex: 1 1 20rem;
+    font-weight: bold;
+    color: #040404;
+}
+
+.form-row input {
+    padding: 0.5rem 3rem;
+    flex: 1 1 20rem;
+    background-color: var(--div-black);
+    color: #fff;
+    border: none;
+}
+
+.form-row select{
+    padding: 0.5rem 3rem;
+    flex: 1 1 20rem;
+    background-color: var(--div-black);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.password-row {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.password-row input{
+    padding: 0.5rem 3rem;
+    margin: 0rem 1rem;
+    border: none;
+    background-color: var(--div-black);
+    color: #fff;
+}
+
+.password-row img {
+    position: absolute;
+    width: 25px;
+    cursor: pointer;
+    right: 13px; /* Regola la posizione dell'icona */
+    top: 50%; /* Posiziona verticalmente al centro */
+    transform: translateY(-50%); /* Centra verticalmente */
+}
