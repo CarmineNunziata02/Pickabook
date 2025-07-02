@@ -1,0 +1,215 @@
+#new_product{
+    min-height: 90vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#torna-indietro{
+    position: relative;
+    display: block ;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border:none;
+    margin: 2rem;
+}
+
+.bar , #torna-indietro::after , #torna-indietro::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px
+}
+
+
+#torna-indietro::before{
+    transform: rotate(-35deg) translate(-15% ,100%);
+    width: 50%;
+}
+
+#torna-indietro::after{
+    transform: rotate(35deg) translate(-15% ,-100%);
+    width: 50%;
+}
+
+
+.form-wrapper{
+    min-width: 60vw;
+    background: var(--background-purple);
+    border-radius : 4rem;
+    display:flex;
+    flex-direction:column;
+    padding: 2rem;
+    justify-content : space-between;
+    flex-wrap: wrap;
+    margin: 1rem;
+}
+
+.form-wrapper h2{
+    text-align: center;
+    padding:2rem 0rem;
+    color: #fff;
+}
+
+.form-row label{
+    flex: 1 1 40rem;
+    margin : 0rem 1rem;
+    color: var(--div-black);
+    font-weight: bold;
+}
+
+.form-row input{
+    flex: 1 1 40rem;
+    padding: 0.5rem 4rem;
+    max-width: 50%;
+    background-color: var(--div-black);
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+}
+
+.sub-class{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-wrapper button{
+    align-self : center;
+    border: none;
+    font-size: 2rem;
+    width: 70%;
+    padding : 1rem;
+    border-radius: 2rem;
+    background-color: var(--cap-red);
+    cursor: pointer;
+    transition: background 0.5s ease-in-out;
+    color: #fff;
+}
+
+.form-wrapper button:hover{
+    background: var(--cap-dark-red);
+}
+
+.form-row, .file-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+}
+
+.file-row label{
+    flex: 1 1 1rem;
+    margin : 0rem 1rem;
+}
+.file-row input{
+    flex: 2 1 1rem;
+
+}
+
+.form-row select{
+    flex: 1 1 10rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.5rem 4rem;
+    min-width: fit-content;
+    border: none;
+    background-color: var(--div-black);
+    border-radius: 5px;
+    color: #fff;
+}
+
+.form-row textarea{
+    height: 10rem;
+    min-width: 35vw;
+    padding: 1rem 2rem;
+    border: 2px solid #ccc;
+    border-radius: 1rem;
+    background-color: var(--div-black);
+    font-size: 1.6rem;
+    resize: none;
+    color: #fff;
+}
+
+.input_container {
+    border: 1px solid #e5e5e5;
+}
+
+input[type=file]::file-selector-button {
+    background-color: var(--div-black);
+    color: #fff;
+    border: 0px;
+    border-right: 1px solid #e5e5e5;
+    padding: 10px 15px;
+    margin-right: 20px;
+
+    transition: all .5s ease-in-out;
+
+}
+
+input[type=file]::file-selector-button:hover {
+    background-color: var(--background-purple);
+    border: 0px;
+    border-right: 1px solid black;
+    color: #fff;
+}
+
+
+
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+    html {
+        font-size: 45%;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+    html {
+        font-size: 45%;
+    }
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+    html {
+        font-size: 45%;
+    }
+
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (max-width: 480px) {
+
+    html {
+        font-size: 45%;
+    }
+
+
+}
