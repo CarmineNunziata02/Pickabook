@@ -61,7 +61,7 @@
           </form>
         </div>
         <div class="links">
-          <!-- [DA CREARE IN SEGUITO?] <a href="./richiestaPassword.jsp">Hai dimenticato la password?</a> -->
+          <a href="./richiestaPassword.jsp">Hai dimenticato la password?</a>
           <p>Non sei iscritto? <br> <a href="./signup.jsp">Iscriviti!!!</a> </p>
 
         </div>

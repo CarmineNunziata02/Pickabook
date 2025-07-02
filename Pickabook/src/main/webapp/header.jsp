@@ -32,6 +32,9 @@
     } else if (currentPage.equals(("/signup.jsp"))) {
       cssFile = "signup.css";
       AdditionalCss = true;
+    } else if (currentPage.equals(("/richiestaPassword.jsp"))) {
+        cssFile = "richiestaPassword.css";
+        AdditionalCss = true;
     }
    
   %>
