@@ -86,7 +86,6 @@ public class GenereIDS implements GenereDAO {
 				return true; 
 			}
 		} catch (SQLException e) {
-			e
 			logger.log(Level.ALL, ERROR, e);
 		}
 
