@@ -35,6 +35,9 @@
     } else if (currentPage.equals(("/richiestaPassword.jsp"))) {
         cssFile = "richiestaPassword.css";
         AdditionalCss = true;
+    } else if (currentPage.equals(("/eliminaProdotto.jsp"))) {
+        cssFile = "eliminaProdotto.css";
+        AdditionalCss = true;
     }
    
   %>
