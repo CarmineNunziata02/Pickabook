@@ -38,6 +38,9 @@
     } else if (currentPage.equals(("/eliminaProdotto.jsp"))) {
         cssFile = "eliminaProdotto.css";
         AdditionalCss = true;
+    } else if(currentPage.equals(("/carrello.jsp"))){
+    	cssFile = "carrello.css";
+    	AdditionalCss = true;
     }
    
   %>
