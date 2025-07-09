@@ -1,0 +1,100 @@
+.mid{
+    width: 100%;
+    min-height: 80vh;
+}
+
+.mid h2 {
+    margin: 2rem 0rem;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner video {
+    height: 31rem;
+    max-width : 100%;
+    max-height: 100%;
+}
+
+
+.account ul {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.account li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    list-style: none;
+    background-color: var(--background-purple);
+    text-align: center;
+}
+
+.account ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 15rem;
+    color: #010101;
+    font-weight: bold;
+}
+
+#admin a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    width: 15rem;
+}
+
+.proimg {
+    width: 7rem;
+    height: 7rem;
+    justify-self: center;
+}
+
+.account a {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+#admin li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    width: 15rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    list-style: none;
+    background-color: var(--background-purple);
+    text-align: center;
+}
+
+#admin .adimg{
+    height: 4rem;
+}
