@@ -41,8 +41,10 @@
     } else if(currentPage.equals(("/carrello.jsp"))){
     	cssFile = "carrello.css";
     	AdditionalCss = true;
+    } else if(currentPage.equals("/indirizzo.jsp")) {
+    	cssFile = "indirizzo.css";
+    	AdditionalCss = true;
     }
-   
   %>
   <% if(AdditionalCss){%>
     <link rel="stylesheet" href="<%= request.getContextPath() %>/styles/global.css">
