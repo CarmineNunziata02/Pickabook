@@ -102,7 +102,7 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css
     });
   }
 </script>
-<button id="torna-indietro" onclick="window.location.assign('areapersonale.jsp')"> <!-- Potrá essere utilizzato una volta creato areapersonale.jsp -->
+<button id="torna-indietro" onclick="window.location.assign('areapersonale.jsp')">
   <div class="bar"></div>
 </button>
 <section id="new_product">
@@ -141,30 +141,24 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css
         <label for="genere">Genere: </label>
         <select  id="genere" name="genere">
           <option disabled selected value>-scegliere genere-</option>
+          <option>Autobiografia</option>
           <option>Avventura</option>
           <option>Azione</option>
-          <option>Combattimento</option>
+          <option>Biografia</option>
+          <option>Classici</option>
           <option>Commedia</option>
           <option>Crimine</option>
+          <option>Distopico</option>
           <option>Drammatico</option>
-          <option>Fantascienza</option>
-          <option>Fantastico</option>
           <option>Fantasy</option>
-          <option>Gang Giovanili</option>
+          <option>Filosofia</option>
           <option>Giallo</option>
-          <option>Guerra</option>
-          <option>Horror</option>
-          <option>Magia</option>
-          <option>Mecha</option>
-          <option>Mistero</option>
-          <option>Musicale</option>
-          <option>Poliziesco</option>
-          <option>Psicologico</option>
-          <option>Scolastico</option>
-          <option>Sentimentale</option>
-          <option>Sportivo</option>
-          <option>Storico</option>
-          <option>Supereroi</option>
+          <option>Gotico</option>
+          <option>Narrativa</option>
+          <option>Romance</option>
+          <option>Satira</option>
+          <option>Scienza</option>
+          <option>Storia</option>
           <option>Thriller</option>
         </select>
       </div>
@@ -172,19 +166,21 @@ https://cdn.jsdelivr.net/npm/sweetalert2@11.7.12/dist/sweetalert2.min.css
         <label for="categoria">Categoria: </label>
         <select id="categoria" name="categoria">
           <option disabled selected value>-scegliere categoria-</option>
-          <option>Art Book</option>
-          <option>Character Book</option>
-          <option>Josei</option>
-          <option>Kodomo</option>
-          <option>Manga</option>
-          <option>Manga Italiani</option>
-          <option>Manhwa</option>
-          <option>Novel</option>
-          <option>Seinen</option>
-          <option>Shojo</option>
-          <option>Shonen</option>
-          <option>Web Comic</option>
-          <option>Manga Magazine</option>
+          <option>Azione</option>
+          <option>Biografie</option>
+          <option>Classico</option>
+          <option>Distopico</option>
+          <option>Fantascienza</option>
+          <option>Fantasy</option>
+          <option>Filosofia</option>
+          <option>Giallo</option>
+          <option>Narrativa Per Ragazzi</option>
+          <option>Ragazzi</option>
+          <option>Romanzo Sentimentale</option>
+          <option>Saga</option>
+          <option>Saggistica</option>
+          <option>Sentimentale</option>
+          <option>Storia</option>
         </select>
       </div>
       <div class= "sub-class">
