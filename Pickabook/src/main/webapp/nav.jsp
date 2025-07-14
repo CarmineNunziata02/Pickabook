@@ -1,6 +1,17 @@
 <%@ page import="utenteManagement.User" %>
 <%@ page import="acquistoManagement.Carrello" %>
 
+<% Object user = session.getAttribute("user");
+	String text = "Accedi";
+    String numeroProdotti = "";
+	if(user != null && user instanceof User) {
+        Carrello carrello = (Carrello) session.getAttribute("carrello");
+        numeroProdotti = String.valueOf(carrello.getListaProdotti().size());
+        text = "Area Personale";
+    }
+	else if(user != null)     
+	text = "Area Personale";
+%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
   <header class="main-head">
     <nav>
